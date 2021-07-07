@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>java script</title>
+
+</head>
+<body>
+<h1>PeoPle entered:</h1>
+<h2 id="count"> 0 </h2>
+
+
+<script>
+	let countt = 0
+	function increament() {
+		countt+=1
+		document.getElementById('count').innerText = countt;
+		// body...
+	}
+	function save() {
+		document.getElementById('v').innerText += countt+"  ";
+		count.textContent = 0
+		
+		// body...
+	}
+</script>
+<button id="b" onclick="increament()"> INCREAMENT</button>
+<button id="b1" onclick="save()">SAVE</button>
+<p id="te"> Saved Value:</p>
+<p id="v">0</p>
+<style >
+	h1,h2{
+		text-align: center;
+			}
+			#b{
+				margin-left: 300px;				background-color:yellow;
+			}
+			#b1{
+				margin-left: 300px;
+				margin-top: 20px;
+				background-color:skyblue;
+				padding-right: 60px;
+				text-align: center;
+			}
+			#te,#v{
+				text-align: center;
+			}
+</style>
+</body>
+</html>
